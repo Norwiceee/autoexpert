@@ -81,7 +81,7 @@ class Migration(migrations.Migration):
                         on_delete=django.db.models.deletion.CASCADE,
                         related_name="projects",
                         to="exchange.category",
-                        verbose_name="рубрика",
+                        verbose_name="Услуга",
                     ),
                 ),
                 (

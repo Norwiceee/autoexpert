@@ -74,6 +74,12 @@ INSTALLED_APPS = [
     "orders.apps.OrdersConfig",
 ]
 
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'exchange' / 'static',
+]
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",

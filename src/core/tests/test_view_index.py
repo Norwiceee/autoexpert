@@ -8,6 +8,6 @@ class IndexViewTest(TestCase):
         response = self.client.get("/")
 
         self.assertEqual(response.status_code, HTTPStatus.OK)
-        self.assertContains(response, "Биржа Услуг")
+        self.assertContains(response, "AutoExpert")
         self.assertContains(response, "Регистрация")
         self.assertContains(response, "Вход")

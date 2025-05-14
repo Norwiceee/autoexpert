@@ -48,7 +48,7 @@ class Migration(migrations.Migration):
                     models.CharField(
                         help_text="Укажите что требуется от заказчика услуги. Например, ТЗ, доступы, и т.п.",
                         max_length=500,
-                        verbose_name="от покупателя нужно",
+                        verbose_name="От клиента нужно",
                     ),
                 ),
                 (
@@ -102,7 +102,7 @@ class Migration(migrations.Migration):
                         on_delete=django.db.models.deletion.CASCADE,
                         related_name="services",
                         to="exchange.category",
-                        verbose_name="рубрика",
+                        verbose_name="Услуга",
                     ),
                 ),
             ],

@@ -11,6 +11,8 @@ from exchange.forms import MessageCreateForm
 from exchange.models import Category
 from exchange.selectors import category_list
 from exchange.services import message_create
+from django.views.generic import DetailView
+from .models import Category
 
 
 def set_user_mode(request):
@@ -67,3 +69,8 @@ def message_create_view(request: HttpRequest) -> HttpResponse:
             + str(message.pk)
         )
     return redirect(reverse_lazy("orders:list"))
+
+class CategoryDetailView(DetailView):
+    model = Category
+    template_name = "exchange/category_detail.html"
+    context_object_name = "category"

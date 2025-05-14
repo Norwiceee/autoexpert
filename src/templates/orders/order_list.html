@@ -9,9 +9,9 @@
     <h1 class="text-3xl font-semibold mb-4">Мои заказы</h1>
 
   {% if user_mode == 'buyer' %}
-    {% include "alert.html" with message="У вас выбран режим &laquo;Я покупатель&raquo;, поэтому вы видите только заказанные вами услуги." style="info" %}
+    {% include "alert.html" with message="У вас выбран режим &laquo;Я клиент&raquo;, поэтому вы видите только заказанные вами услуги." style="info" %}
   {% else %}
-    {% include "alert.html" with message="У вас выбран режим &laquo;Я продавец&raquo;, поэтому вы видите только заказанные у вас услуги." style="info" %}
+    {% include "alert.html" with message="У вас выбран режим &laquo;Я эксперт&raquo;, поэтому вы видите только заказанные у вас услуги." style="info" %}
   {% endif %}
 
     <h2 class="text-2xl font-semibold mb-2">В работе</h2>

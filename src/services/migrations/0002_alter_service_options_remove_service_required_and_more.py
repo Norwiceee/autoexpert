@@ -29,7 +29,7 @@ class Migration(migrations.Migration):
                 default=123,
                 help_text="Укажите что требуется от заказчика услуги. Например, ТЗ, доступы, и т.п.",
                 max_length=500,
-                verbose_name="от покупателя нужно",
+                verbose_name="От клиента нужно",
             ),
             preserve_default=False,
         ),

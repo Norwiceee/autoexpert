@@ -22,7 +22,7 @@ class Service(models.Model):
         blank=False,
     )
     category = models.ForeignKey(
-        verbose_name="рубрика",
+        verbose_name="Услуга",
         help_text="Категория, в которой будет размещена услуга",
         to=Category,
         on_delete=models.CASCADE,
@@ -44,7 +44,7 @@ class Service(models.Model):
         blank=False,
     )
     requirements = models.TextField(
-        verbose_name="от покупателя нужно",
+        verbose_name="От клиента нужно",
         help_text="Укажите что требуется от заказчика услуги. Например, ТЗ, доступы, и т.п.",
         max_length=500,
         null=False,

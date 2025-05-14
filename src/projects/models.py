@@ -22,7 +22,7 @@ class Project(models.Model):
         blank=False,
     )
     category = models.ForeignKey(
-        verbose_name="рубрика",
+        verbose_name="Услуга",
         help_text="Категория, в которой будет размещен проект",
         to=Category,
         on_delete=models.CASCADE,
